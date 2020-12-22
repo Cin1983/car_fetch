@@ -2,10 +2,12 @@ import React from "react";
 
 class SearchBar extends React.Component {
     state = { term: "" };
-    onFormSumit(event) {
+
+    onFormSumit = event => {
         event.preventDefault();
-       
-   }
+        
+        this.props.onSubmit(this.state.term)
+    };
 
   render() {
     return (
@@ -14,7 +16,7 @@ class SearchBar extends React.Component {
           <label> CHOOSE YOUR CAR!!! </label>
           <div className="field">
                     <input type="text" value={this.state.term}
-                        onChange={ event => this.setState({ term: event.target.value })}/>
+                        onChange={ event => this.setState({ term: event.target.value })}/> 
           </div>
         </form>
       </div>
