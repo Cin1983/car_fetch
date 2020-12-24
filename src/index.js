@@ -14,4 +14,4 @@ import App from "./components.js/App";
 
 ReactDOM.render(<App />, document.querySelector("#root"));
 
-export default App;
+// export default App;

@@ -1,18 +1,18 @@
 import React from "react";
 
+
 class SearchBar extends React.Component {
     state = { term: "" };
 
-    onFormSumit = event => {
+    onFormSubmit = event => {
         event.preventDefault();
-        
         this.props.onSubmit(this.state.term)
     };
 
   render() {
     return (
       <div className="ui segment">
-            <form onSubmit={this.onFormSumit} className="ui_form">
+            <form onSubmit={this.onFormSubmit} className="ui_form">
           <label> CHOOSE YOUR CAR!!! </label>
           <div className="field">
                     <input type="text" value={this.state.term}
