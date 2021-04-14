@@ -13,10 +13,12 @@ class SearchBar extends React.Component {
     return (
       <div className="ui segment">
             <form onSubmit={this.onFormSubmit} className="ui_form">
-          <label> CHOOSE YOUR CAR!!! </label>
+          <label> <p>Just type and search </p> </label>
           <div className="field">
                     <input type="text" value={this.state.term}
-                        onChange={ event => this.setState({ term: event.target.value })}/> 
+              onChange={event => this.setState({ term: event.target.value })} />
+            
+            <button >submit</button>
           </div>
         </form>
       </div>
