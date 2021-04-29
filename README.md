@@ -1,2 +1,6 @@
-Just click and search.
-Search engine made with Unsplash API Key
+Just click and search!
+ React.js
+ Unsplash API KEY
+ JavaScript
+ CSS semantic-ui</li>
+ HTML/GIT
